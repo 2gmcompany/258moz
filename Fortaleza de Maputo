@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fortaleza de Maputo | Official Heritage Site</title>
+  <meta name="description" content="Official institutional website of the Fortress of Maputo – historical, cultural and tourist heritage of Mozambique." />
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Institutional Identity Colors -->
+  <style>
+    :root{
+      --red:#b11226;      /* red of the walls & flag */
+      --green:#007a3d;    /* Mozambique flag green */
+      --yellow:#f4c430;   /* Mozambique flag yellow */
+      --dark:#222;
+      --light:#f7f7f7;
+    }
+
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;line-height:1.6;color:#333;}
+    header{background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Fortaleza_de_Maputo.jpg') center/cover no-repeat;color:#fff;padding:90px 20px;text-align:center;}
+    header h1{font-size:3em;margin-bottom:10px;}
+    header p{font-size:1.2em;}
+
+    nav{background:var(--red);padding:12px;text-align:center;}
+    nav a{color:#fff;margin:0 12px;text-decoration:none;font-weight:bold;}
+    nav button{margin-left:15px;padding:6px 12px;border:none;background:var(--yellow);font-weight:bold;cursor:pointer;}
+
+    section{padding:60px 10%;}
+    h2{color:var(--red);margin-bottom:20px;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;}
+    img{width:100%;border-radius:10px;}
+
+    .info{background:var(--light);}
+    iframe{width:100%;border:0;border-radius:10px;height:350px;}
+
+    .social a{display:inline-block;margin:10px;color:#fff;background:var(--green);padding:12px 16px;border-radius:6px;text-decoration:none;}
+
+    footer{background:var(--dark);color:#ccc;text-align:center;padding:35px;}
+  </style>
+
+  <script>
+    function switchLang(lang){
+      document.querySelectorAll('[data-pt]').forEach(el=>{
+        el.innerHTML = (lang==='pt') ? el.dataset.pt : el.dataset.en;
+      });
+    }
+  </script>
+</head>
+<body onload="switchLang('pt')">
+
+<header>
+  <h1>Fortaleza de Maputo</h1>
+  <p data-pt="Monumento Nacional • Património Histórico • Atracção Turística"
+     data-en="National Monument • Historical Heritage • Tourist Attraction"></p>
+</header>
+
+<nav>
+  <a href="#about">Sobre</a>
+  <a href="#history">História</a>
+  <a href="#visit">Visitar</a>
+  <a href="#gallery">Galeria</a>
+  <a href="#contact">Contactos</a>
+  <button onclick="switchLang('pt')">PT</button>
+  <button onclick="switchLang('en')">EN</button>
+</nav>
+
+<section id="about">
+  <h2 data-pt="Sobre a Fortaleza" data-en="About the Fortress"></h2>
+  <p data-pt="A Fortaleza de Maputo, oficialmente Fortaleza de Nossa Senhora da Conceição, é um dos mais importantes monumentos históricos de Moçambique. Localiza‑se na Praça 25 de Junho, no centro histórico da cidade."
+     data-en="The Fortress of Maputo, officially Fortress of Our Lady of the Conception, is one of Mozambique’s most important historical monuments, located at 25 de Junho Square in the historic city centre."></p>
+</section>
+
+<section id="history">
+  <h2 data-pt="História" data-en="History"></h2>
+  <div class="grid">
+    <div>
+      <p data-pt="Construída no final do século XVIII para defesa da antiga povoação de Lourenço Marques, a fortaleza foi palco de conflitos, resistências locais e eventos marcantes da história nacional."
+         data-en="Built in the late 18th century to defend the former settlement of Lourenço Marques, the fortress witnessed conflicts, local resistance and key moments of national history."></p>
+      <p data-pt="No seu interior encontra‑se o túmulo de Ngungunhane, último imperador do Império de Gaza."
+         data-en="Inside lies the tomb of Ngungunhane, the last emperor of the Gaza Empire."></p>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Maputo_Fortress_inside.jpg" alt="Interior da Fortaleza de Maputo" />
+  </div>
+</section>
+
+<section id="gallery">
+  <h2 data-pt="Galeria" data-en="Gallery"></h2>
+  <div class="grid">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Fortaleza_de_Maputo_courtyard.jpg" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Maputo_Fortress_wall.jpg" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Fortaleza_de_Maputo.jpg" />
+  </div>
+</section>
+
+<section id="visit" class="info">
+  <h2 data-pt="Informações para Visitantes" data-en="Visitor Information"></h2>
+  <p data-pt="📍 Praça 25 de Junho, Avenida Samora Machel, Maputo"
+     data-en="📍 25 de Junho Square, Samora Machel Avenue, Maputo"></p>
+  <p data-pt="⏰ Aberto diariamente das 09h30 às 17h00"
+     data-en="⏰ Open daily from 09:30 to 17:00"></p>
+  <p data-pt="🎟️ Bilhetes acessíveis ao público"
+     data-en="🎟️ Affordable entrance fees"></p>
+
+  <iframe src="https://www.google.com/maps?q=Fortaleza%20de%20Maputo&output=embed"></iframe>
+</section>
+
+<section id="contact">
+  <h2 data-pt="Contactos & Redes" data-en="Contacts & Social Media"></h2>
+  <div class="social">
+    <a href="https://wa.me/258000000000" target="_blank">WhatsApp Turístico</a>
+    <a href="#" target="_blank">Facebook</a>
+    <a href="#" target="_blank">Instagram</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Fortaleza de Maputo – Monumento Nacional</p>
+  <p>Website Institucional Oficial</p>
+</footer>
+
+</body>
+</html>
