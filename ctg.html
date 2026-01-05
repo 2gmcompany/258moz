@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companhia de Teatro Gungu</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #e67e22;
+        }
+
+        .hero {
+            background-image: url('CTG1.jpg'); /* Primeira foto destaque */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        .about, .contact {
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            padding: 40px;
+        }
+
+        .reviews {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .review {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .review p {
+            margin-bottom: 10px;
+        }
+
+        .review .author {
+            font-weight: bold;
+            color: #e67e22;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .events {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .event {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .event img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .event h3 {
+            padding: 15px;
+            color: #2c3e50;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #fff;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .map {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        @media(max-width: 768px) {
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Companhia de Teatro Gungu</h1>
+        <nav>
+            <a href="#about">Acerca</a>
+            <a href="#gallery">Galeria</a>
+            <a href="#events">Espetáculos</a>
+            <a href="#reviews">Críticas</a>
+            <a href="#contact">Contactos</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Vivencie o Teatro Moçambicano!</h2>
+    </div>
+
+    <!-- Sobre a Companhia -->
+    <section id="about" class="about">
+        <h2>Acerca da Companhia</h2>
+        <p>A Companhia de Teatro Gungu é um espaço cultural dedicado à produção de peças teatrais divertidas, educativas e interativas. Localizada na Baixa de Maputo, oferecemos espetáculos que combinam humor, informação e entretenimento para todas as idades.</p>
+        <p>O teatro possui infraestrutura acolhedora, incluindo bilheteira, sanitários, snacks e bebidas, garantindo conforto durante cada apresentação.</p>
+    </section>
+
+    <!-- Galeria de fotos -->
+    <section id="gallery">
+        <h2>Galeria de Fotos</h2>
+        <div class="gallery">
+            <img src="CTG1.jpg" alt="Foto CTG1">
+            <img src="CTG2.jpg" alt="Foto CTG2">
+            <img src="CTG3.jpg" alt="Foto CTG3">
+            <img src="CTG4.jpg" alt="Foto CTG4">
+        </div>
+    </section>
+
+    <!-- Eventos / Espetáculos -->
+    <section id="events">
+        <h2>Espetáculos</h2>
+        <div class="events">
+            <div class="event">
+                <img src="cartaz1.jpg" alt="Cartaz Espetáculo 1">
+                <h3>Espetáculo: Gungu em Cena 2026</h3>
+            </div>
+            <div class="event">
+                <img src="cartaz2.jpg" alt="Cartaz Espetáculo 2">
+                <h3>Espetáculo: Humor e Tradição</h3>
+            </div>
+            <div class="event">
+                <img src="cartaz3.jpg" alt="Cartaz Espetáculo 3">
+                <h3>Espetáculo: Noite de Risos</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Críticas -->
+    <section id="reviews">
+        <h2>O que dizem sobre nós</h2>
+        <div class="reviews">
+            <div class="review">
+                <p>"É sempre um prazer assistir aos programas aqui. Peças muito engraçadas com um toque de humor. Sempre voltarei."</p>
+                <div class="author">— Walter Taju</div>
+            </div>
+            <div class="review">
+                <p>"Depois de todos estes anos, as peças ainda têm qualidade."</p>
+                <div class="author">— Walter Honwana</div>
+            </div>
+            <div class="review">
+                <p>"Local recomendado para um teatro moçambicano divertido, informativo, interativo e agradável. O local é acolhedor e oferece outras comodidades."</p>
+                <div class="author">— Denis Meque</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contactos -->
+    <section id="contact" class="contact">
+        <h2>Contacte-nos</h2>
+        <div class="contact-info">
+            <p>📍 170 Avenida Mártires de Inhaminga, Maputo 1100</p>
+            <p>📞 +258 87 945 2701</p>
+            <p>📌 Código Plus: 2HG9+FF Maputo</p>
+        </div>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.123456789!2d32.582135!3d-25.9654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7a1b8abc12345%3A0x123456789abcdef!2sCompanhia%20de%20Teatro%20Gungu!5e0!3m2!1spt-PT!2smz!4v1670000000000!5m2!1spt-PT!2smz" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Companhia de Teatro Gungu. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
